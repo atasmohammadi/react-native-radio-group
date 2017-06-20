@@ -1,0 +1,28 @@
+{
+  "name": "react-native-radio-group",
+  "version": "1.0.0",
+  "description": "Radio group component for React native",
+  "main": "radioGroup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ataomega/react-native-radio-group.git"
+  },
+  "keywords": [
+    "react",
+    "react",
+    "native",
+    "radio",
+    "radio",
+    "group",
+    "component"
+  ],
+  "author": "Ata S.Mohammadi (ataomega@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ataomega/react-native-radio-group/issues"
+  },
+  "homepage": "https://github.com/ataomega/react-native-radio-group#readme"
+}
