@@ -47,12 +47,13 @@ export default class RadioGroup extends Component {
       this.setState({
         selected: [item]
       })
+      this.props.callback(item)
     } else {
       this.setState({
         selected: []
       })
+      this.props.callback("")
     }
-    this.props.callback(selected)
   }
 
   _isSelected = (item) => {
