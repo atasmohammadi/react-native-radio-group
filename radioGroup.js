@@ -24,6 +24,15 @@ export default class RadioGroup extends Component {
     };
   }
 
+  componentDidMount = () => {
+    this.props.radios.map(radio=>{
+        if(radio.selected){
+          this._onSelect(radio.value)
+        }
+      }
+    )
+  }
+
   getNewDimensions(event){
         var pageHeight = event.nativeEvent.layout.height
         var pageWidth = event.nativeEvent.layout.width
@@ -66,23 +75,20 @@ export default class RadioGroup extends Component {
           padding: 5
         }}
       >
-        {radios.map((checkbox, index)=>{
-          if(checkbox.selected){
-            this._onSelect(checkbox.value)
-          }
+        {radios.map((radio, index)=>{
           return(
             <TouchableOpacity
               key={index}
               style={rowStyle}
               onPress={()=>{
-                this._onSelect(checkbox.value)
+                this._onSelect(radio.value)
               }}
             >
-              {this._isSelected(checkbox.value) ?
+              {this._isSelected(radio.value) ?
                 <Icon name={checkedIcon} color={iconColor} size={iconSize}/>
                 : <Icon name={uncheckedIcon} color={iconColor} size={iconSize}/>
               }
-              <Text style={labelStyle}>{checkbox.label}</Text>
+              <Text style={labelStyle}>{radio.label}</Text>
             </TouchableOpacity>
           )
         })}

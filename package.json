@@ -1,6 +1,6 @@
 {
   "name": "react-native-radio-group",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Radio group component for React native",
   "main": "radioGroup.js",
   "scripts": {
@@ -9,6 +9,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ataomega/react-native-radio-group.git"
+  },
+  "dependencies": {
+    "react-native-vector-icons": "^3.0.0"
   },
   "keywords": [
     "react",
