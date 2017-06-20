@@ -36,7 +36,7 @@ import RadioGroup from 'react-native-radio-group'
             />
 ```
 
-![react-native-radio-group](https://raw.githubusercontent.com/ataomega/react-native-checkbox-group/master/screenshot.png)
+![react-native-radio-group](https://raw.githubusercontent.com/ataomega/react-native-radio-group/master/screenshot.png)
 
 ### Props:
 | Prop | Type | Description |
